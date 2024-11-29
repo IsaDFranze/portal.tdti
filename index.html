@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="shortcut icon" type="imagex/png" href="logo 2.0.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de notícias - T.D.T.I</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background: rgb(17,241,81);
+            background: radial-gradient(circle, rgba(17,241,81,1) 26%, rgba(32,180,24,1) 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 18px;
+        }
+        .logo{
+            height: 65px;
+        }
+        .nav-container {
+            display: flex;
+            flex: 1; /* Para que ocupe todo o espaço restante */
+            justify-content: center; /* Centraliza o menu */
+        }
+        nav {
+            display: flex;
+            gap: 40px; /* Espaçamento entre os itens do menu */
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+        input[type="text"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        .container {
+            max-width: 85%;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #4CAF50;
+        }
+        .article {
+            display: flex; /* Usar flexbox para alinhar os itens na mesma linha */
+            align-items: center; /* Alinhar verticalmente os itens */
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .article h3 {
+            margin: 0;
+            flex: 1; /* Faz o título ocupar o máximo de espaço disponível */
+        }
+
+        .article-image {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    border-radius: 50%; /* Torna a imagem redonda */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+        }
+
+        .footer {
+            text-align: center;
+            background-color: rgba(32,180,24,1);
+            color: white;
+            position: relative;
+            bottom: 0;
+            display: flex;
+            padding: 5px 500px;
+        }
+        /* CSS para as imagens laterais */
+          .side-image {
+        position: fixed; /* Fixa a imagem na tela */
+        top: 0; /* Alinha ao topo da página */
+        height: 100%; /* Ocupa a altura total da página */
+        z-index: -1; /* Coloca as imagens atrás do conteúdo */
+        }
+         .left {esquerda */
+        width: 15%; /* Ajuste a largura c
+        left: 0; /* Posiciona a imagem à onforme necessário */
+        }
+         .right {
+        right: 0; /* Posiciona a imagem à direita */
+        width: 15%; /* Ajuste a largura conforme necessário */
+         }
+        .article a {
+         color: inherit; /* Mantém a cor do texto original */
+          text-decoration: none; /* Remove o sublinhado */
+        }
+
+         .article a:hover {
+         text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+         }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo 2.0.ico" alt="Logo da Empresa" class="logo"> <!-- Logo da empresa -->
+        <p style="margin-left: 15px; font-family: 'Roboto', sans-serif; font-size: 20px;">T.D.T.I</p>
+        <div class="nav-container">
+            <nav>
+                <!-- Link alterado para a página inicial -->
+                <a href="index.html" aria-label="Ir para a página inicial">Início</a>
+                
+                <!-- Link alterado para a página de notícias -->
+                <a href="noticias.html" aria-label="Ver notícias">Notícias</a>
+                
+                <!-- Link alterado para a página sobre -->
+                <a href="testefundo.html" aria-label="Saiba mais sobre nós">Sobre</a>
+                
+                <!-- Link alterado para a página de contato -->
+                <a href="testefundo.html" aria-label="Entre em contato">Contato</a>
+            </nav>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </header>
+
+    <img src="anuncio.jpg" alt="Imagem Esquerda" class="side-image left">
+
+    <div class="container">
+        <div class="section" id="noticias">
+            <h2>Últimas Notícias</h2>
+            <div class="article">
+                <a href="erros.html">
+                    <h3>Erros de medicamentos: O que você precisa saber para se prevenir?</h3>
+                </a>
+                <img src="images (1).jpg" style="width: 100px; height: 100px; margin-left: 100px; border-radius: 50%;">
+            </div>
+            <div class="article">
+                <a href="testefundo.html">
+                    <h3>Importância da Revisão Regular de Medicamentos</h3>
+                </a>
+                <img src="images.jpg" alt="Imagem Importância" style="width: 100px; height: 100px; margin-left: 100px; border-radius: 50%;">
+            </div>
+            <div class="article">
+                <a href="testefundo.html">
+                    <h3>Como a Tecnologia Pode Ajudar na Saúde</h3>
+                </a>
+                <img src="images (2).jpg" alt="Imagem Como a tec." style="width: 100px; height: 100px; margin-left: 100px; border-radius: 50%;">
+            </div>
+        </div>
+
+        <div class="section" id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma plataforma dedicada a fornecer informações precisas e atualizadas sobre saúde, com foco em prevenção e bem-estar.</p>
+        </div>
+
+        <div class="section" id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco pelo e-mail: contato@portaldenoticias.com.br</p>
+        </div>
+    </div>
+
+    <img src="anuncio.jpg" alt="Imagem Direita" class="side-image right">
+
+    <footer class="footer">
+        <p>&copy; 2024 Portal de Notícias. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

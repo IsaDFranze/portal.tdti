@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="shortcut icon" type="imagex/png" href="logo 2.0.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de notícias - T.D.T.I</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #82fd8cc2;
+            background: url('sua-imagem.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Estilo para o overlay da frase */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .overlay p {
+            color: white;
+            font-size: 2em;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            z-index: 2;
+        }
+
+        header, footer {
+            background: rgb(17,241,81);
+            background: radial-gradient(circle, rgba(17,241,81,1) 26%, rgba(32,180,24,1) 100%);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portal de notícias - T.D.T.I</h1>
+    </header>
+
+    <!-- Frase sobre a imagem com efeito de opacidade -->
+    <div class="overlay">
+        <p>Aqui não tem nada, pois não fomos pagos para isto</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Portal de Notícias. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
